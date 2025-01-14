@@ -1,7 +1,9 @@
-Se encontraron distintos retos los cuales algunos se abordan de cierta manera sin embargo puede no ser la solucion final
+Se encontraron distintos retos, los cuales algunos se abordan de cierta manera, sin embargo puede no ser la solucion final
 Retos encontrados:
-1. Como se sugirio en la instrucciones, se utilizaron librerias como requests con la cual no se podia acceder a los archivos html, por lo que tambien se realizaron intentos como con la libreria Selenium con la cual si se pudo acceder a las urls sin embargo no se recuperaban toda la estructura del archivo.
-2. Como tuve conflictos para poder acceder directamente mediante las librerias propuestas, presento esta solucion que si bien no funciona del todo, presento una forma que en base a investigacion pudiera funcionar con archivos que no tengan conflictos para pode acceder a ellos y una estructura mas organizada.
+1. Como se sugirio en la instrucciones, se utilizaron librerias como requests con la cual no se podia acceder a los archivos html(se probo configurar headers etc..), por lo que tambien se realizaron intentos como con la libreria Selenium con la cual si se pudo acceder a las urls sin embargo no se recuperaban toda la estructura del archivo.
+2. Como tuve conflictos para poder acceder directamente mediante las librerias propuestas, presento esta solucion. Presento una forma que en base a investigacion y a un analisis de la estructura de los archivos propongo.
+
+ Se describe cada detalle en el codigo para su facil lectura y entendimiento.
 
 Descripcion de la solución presentada:
 Si bien se mantiene la idea principal, se abordo de distinta manera la solución.
@@ -17,7 +19,7 @@ Pasos para replicar el proyecto realizado
 1. Se requiere instalación previa de python y algunas librerias necesarias.
    Una vez descargado python, puede proceder a instalar las librerias. Puedes instalar las librerias con el siguiente comando bash: pip install beautifulsoup4 pandas pyarrow requests
 
-2. Ubiquese en el path raiz del proyecto: testDacode/
+2. Ubiquese en el path raiz del proyecto: Dacode/
 
 3. Ejecute el script download_html_files.py para descargar los archivos html con el comando:
    python scripts/download_html_files.py
